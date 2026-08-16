@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      background: #1c1c1c;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .title {
+      color: white;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .thumbnail {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 14px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .watch {
+      background: #ff1744;
+      color: white;
+    }
+
+    .download {
+      background: #00c853;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    @media (max-width: 450px) {
+      .buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="title">Your Video Title</h1>
+
+    <img
+      class="thumbnail"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdLSLUexdJ6ISgt0AuADl9BUxIQZVqTuXXJhiMYNrt_Q&s=10"
+      alt="Video Thumbnail"
+    >
+
+    <div class="buttons">
+      <a
+        href="https://example.com/video"
+        class="btn watch"
+        target="_blank"
+      >
+        ▶ Watch Full Video
+      </a>
+
+      <a
+        href="https://example.com/video.mp4"
+        class="btn download"
+        download
+      >
+        ↓ Download Now
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
