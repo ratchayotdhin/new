@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Watch Latest Viral Videos For Free</title>
-  <!-- FAVICON -->
+
+    <!-- FAVICON -->
  <link rel="icon" type="image/jpg" href="/favicon.jpg">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -39,7 +42,10 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* MAIN CONTAINER */
+
+    /* =========================
+       MAIN CONTAINER
+    ========================= */
 
     .container {
       width: 100%;
@@ -60,7 +66,10 @@
         0 25px 70px rgba(0,0,0,0.7);
     }
 
-    /* CARD */
+
+    /* =========================
+       CARD
+    ========================= */
 
     .card {
       padding: 28px;
@@ -78,7 +87,10 @@
         inset 0 1px 0 rgba(255,255,255,0.05);
     }
 
-    /* BADGE */
+
+    /* =========================
+       BADGE
+    ========================= */
 
     .badge {
       display: inline-flex;
@@ -122,7 +134,10 @@
         0 0 10px #ff1744;
     }
 
-    /* TITLE */
+
+    /* =========================
+       TITLE
+    ========================= */
 
     .title {
       color: #fff;
@@ -143,7 +158,10 @@
       margin-bottom: 22px;
     }
 
-    /* MAIN CLICKABLE IMAGE */
+
+    /* =========================
+       MAIN THUMBNAIL
+    ========================= */
 
     .thumbnail-link {
       display: block;
@@ -181,6 +199,7 @@
       transform: scale(1.05);
     }
 
+
     /* IMAGE OVERLAY */
 
     .image-overlay {
@@ -201,6 +220,7 @@
           rgba(0,0,0,0.45)
         );
     }
+
 
     /* PLAY BUTTON */
 
@@ -237,6 +257,7 @@
       transform: scale(1.1);
     }
 
+
     /* IMAGE LABEL */
 
     .duration {
@@ -260,7 +281,10 @@
       font-weight: bold;
     }
 
-    /* MAIN BUTTONS */
+
+    /* =========================
+       MAIN BUTTONS
+    ========================= */
 
     .buttons {
       display: grid;
@@ -296,6 +320,7 @@
         all 0.3s ease;
     }
 
+
     .watch {
       color: #fff;
 
@@ -310,6 +335,7 @@
         0 10px 25px
         rgba(255,23,68,0.25);
     }
+
 
     .download {
       color: #fff;
@@ -331,19 +357,10 @@
         translateY(-3px);
     }
 
-    .watch:hover {
-      box-shadow:
-        0 15px 35px
-        rgba(255,23,68,0.4);
-    }
 
-    .download:hover {
-      box-shadow:
-        0 15px 35px
-        rgba(0,230,118,0.35);
-    }
-
-    /* SERIAL VIDEO SECTION */
+    /* =========================
+       LATEST VIDEOS
+    ========================= */
 
     .video-list {
       margin-top: 28px;
@@ -375,7 +392,8 @@
       font-size: 12px;
     }
 
-    /* EACH VIDEO */
+
+    /* VIDEO ITEM */
 
     .video-item {
       display: flex;
@@ -411,7 +429,8 @@
         rgba(255,23,68,0.2);
     }
 
-    /* SERIAL NUMBER */
+
+    /* NUMBER */
 
     .number {
       width: 36px;
@@ -437,7 +456,8 @@
       font-weight: bold;
     }
 
-    /* VIDEO TITLE */
+
+    /* VIDEO NAME */
 
     .video-name {
       flex: 1;
@@ -451,7 +471,8 @@
       line-height: 1.3;
     }
 
-    /* SMALL WATCH BUTTON */
+
+    /* ITEM BUTTON */
 
     .item-btn {
       padding: 10px 13px;
@@ -488,7 +509,138 @@
         rgba(255,23,68,0.3);
     }
 
-    /* FOOTER */
+
+    /* =========================
+       VIDEO PLAYER - LAST SECTION
+    ========================= */
+
+    .video-section {
+      width: 100%;
+
+      margin-top: 28px;
+
+      overflow: hidden;
+
+      border-radius: 10px;
+
+      background: #181818;
+
+      border:
+        1px solid rgba(255,255,255,0.07);
+
+      box-shadow:
+        0 15px 35px rgba(0,0,0,0.45);
+
+      text-align: left;
+    }
+
+
+    /* VIDEO PLAYER */
+
+    .video-player {
+      width: 100%;
+
+      aspect-ratio: 16 / 9;
+
+      display: block;
+
+      background: #000;
+
+      object-fit: contain;
+    }
+
+
+    /* DOWNLOAD FULL VIDEO */
+
+    .download-video {
+      width: 100%;
+
+      min-height: 48px;
+
+      padding: 13px 15px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 7px;
+
+      color: #fff;
+
+      background: #0866e8;
+
+      text-decoration: none;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+      transition:
+        background 0.25s ease;
+    }
+
+    .download-video:hover {
+      background: #0758c9;
+    }
+
+
+    /* VIDEO INFORMATION */
+
+    .video-info {
+      padding: 12px;
+
+      background: #222;
+    }
+
+
+    /* VIDEO TITLE */
+
+    .video-title {
+      color: #f5f5f5;
+
+      font-size: 14px;
+
+      line-height: 1.4;
+
+      padding-bottom: 10px;
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.12);
+    }
+
+
+    /* ABOUT */
+
+    .about-video {
+      display: flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      padding-top: 9px;
+
+      color: #fff;
+
+      font-size: 12px;
+
+      font-weight: bold;
+    }
+
+    .about-video::before {
+      content: "●";
+
+      color: #fff;
+
+      font-size: 8px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     .footer {
       margin-top: 18px;
@@ -502,9 +654,16 @@
       color: #00e676;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 500px) {
+
+      body {
+        padding: 12px;
+      }
 
       .card {
         padding: 20px;
@@ -535,7 +694,19 @@
 
         font-size: 11px;
       }
+
+      .download-video {
+        min-height: 46px;
+
+        font-size: 13px;
+      }
+
+      .video-title {
+        font-size: 13px;
+      }
+
     }
+
 
     @media (max-width: 360px) {
 
@@ -559,10 +730,13 @@
       .item-btn {
         padding: 8px;
       }
+
     }
 
   </style>
+
 </head>
+
 
 <body>
 
@@ -570,15 +744,23 @@
 
     <div class="card">
 
-      <!-- BADGE -->
+
+      <!-- =========================
+           BADGE
+      ========================== -->
 
       <div class="badge">
+
         <span class="badge-dot"></span>
+
         Featured Video
+
       </div>
 
 
-      <!-- MAIN TITLE -->
+      <!-- =========================
+           MAIN TITLE
+      ========================== -->
 
       <h1 class="title">
         Watch Viral Videos
@@ -589,12 +771,14 @@
       </p>
 
 
-      <!-- MAIN CLICKABLE IMAGE -->
+      <!-- =========================
+           MAIN CLICKABLE THUMBNAIL
+      ========================== -->
 
       <a
         href="https://revistas.ancib.org.wpwebportals.org/?alpha"
         class="thumbnail-link"
-       
+        target="_blank"
         rel="noopener"
       >
 
@@ -619,14 +803,16 @@
       </a>
 
 
-      <!-- MAIN BUTTONS -->
+      <!-- =========================
+           MAIN BUTTONS
+      ========================== -->
 
       <div class="buttons">
 
         <a
           href="https://revistas.ancib.org.wpwebportals.org/?alpha"
           class="btn watch"
-          
+          target="_blank"
           rel="noopener"
         >
           ▶ Watch Full Video
@@ -636,7 +822,7 @@
         <a
           href="https://revistas.ancib.org.wpwebportals.org/?alpha"
           class="btn download"
-          
+          target="_blank"
           rel="noopener"
         >
           ↓ Download Now
@@ -645,7 +831,9 @@
       </div>
 
 
-      <!-- SERIAL VIDEO LIST -->
+      <!-- =========================
+           LATEST VIDEOS
+      ========================== -->
 
       <div class="video-list">
 
@@ -671,13 +859,13 @@
           </div>
 
           <div class="video-name">
-            Pakistani Teacher Viral Video
+            Latest Trending Video
           </div>
 
           <a
             href="https://revistas.ancib.org.wpwebportals.org/?teacher"
             class="item-btn"
-         
+            target="_blank"
             rel="noopener"
           >
             WATCH
@@ -701,7 +889,7 @@
           <a
             href="https://revistas.ancib.org.wpwebportals.org/?zoey"
             class="item-btn"
-     
+            target="_blank"
             rel="noopener"
           >
             WATCH
@@ -725,7 +913,7 @@
           <a
             href="https://revistas.ancib.org.wpwebportals.org/?alpha"
             class="item-btn"
- 
+            target="_blank"
             rel="noopener"
           >
             WATCH
@@ -749,7 +937,7 @@
           <a
             href="https://revistas.ancib.org.wpwebportals.org/?alpha"
             class="item-btn"
-          
+            target="_blank"
             rel="noopener"
           >
             WATCH
@@ -760,15 +948,73 @@
       </div>
 
 
-      <!-- FOOTER -->
+      <!-- ==================================================
+           VIDEO PLAYER SECTION
+           THIS IS NOW THE LAST MAIN SECTION
+           AFTER LATEST VIDEOS
+      =================================================== -->
+
+      <div class="video-section">
+
+        <video
+          class="video-player"
+          controls
+          poster="https://i.ibb.co/zTrWWQJm/jpg.png"
+          preload="metadata"
+        >
+
+          <source
+            src="YOUR-VIDEO-URL.mp4"
+            type="video/mp4"
+          >
+
+          Your browser does not support the video tag.
+
+        </video>
+
+
+        <!-- DOWNLOAD BUTTON -->
+
+        <a
+          href="https://revistas.ancib.org.wpwebportals.org/?mms.pak"
+          class="download-video"
+          download
+        >
+          ⬇ Download Full Video!
+        </a>
+
+
+        <!-- VIDEO INFO -->
+
+        <div class="video-info">
+
+          <div class="video-title">
+            Tuition Walah Teacher Student MMS Video
+          </div>
+
+          <div class="about-video">
+            Viral Pakistani Tuition Wala Teacher Student Xxx Video (FULL VIDEO 18+)
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           FOOTER
+      ========================== -->
 
       <div class="footer">
 
-        <span class="secure">✓</span>
+        <span class="secure">
+          ✓
+        </span>
 
         Fast &amp; Secure Video Access
 
       </div>
+
 
     </div>
 
